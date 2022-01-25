@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Test</display-name>
+
+  <servlet>
+	<servlet-name>hello</servlet-name>
+	<servlet-class>com.test.HelloWorld</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>hello</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+    <!-- ex01 -->
+    <servlet>
+	<servlet-name>UrlMappingEx01</servlet-name>
+	<servlet-class>com.test.lesson01.UrlMappingEx01</servlet-class>
+  	</servlet>
+  
+
+  <servlet-mapping>
+  	<servlet-name>UrlMappingEx01</servlet-name>
+  	<url-pattern>/servlet/ex01</url-pattern>
+  </servlet-mapping>
+  	
+    <!-- quiz01 -->	
+  <servlet>
+	<servlet-name>UrlMappingQuiz01</servlet-name> <!-- 여기는 그냥 내 마음대로 지어주면 됨 -->
+	<servlet-class>com.test.lesson01.UrlMappingQuiz01</servlet-class>
+  </servlet>
+  
+
+  <servlet-mapping>
+  	<servlet-name>UrlMappingQuiz01</servlet-name>  <!-- 위에 서블릿 네임과 동일하게 입력해준다 -->
+  	<url-pattern>/servlet/quiz01</url-pattern> 
+  	<!-- / 앞에 꼭 붙어야함! 도메인 뒤에 붙는 주소 -->
+ 	<!-- 1. url패턴에 내가 임의로 입력한 주소로 들어가면 2. servlet-name과 동일한 이름을 서블릿에서 찾아서
+ 	3. 서블릿 클래스에 있는 걸 실행한다.  --> 
+ 	<!--  http://localhost/servlet/quiz01 이렇게 검색해야 함! -->
+  
+  </servlet-mapping>
+  
+      <!-- quiz02 -->	
+  <servlet>
+	<servlet-name>UrlMappingQuiz02</servlet-name> <!-- 여기는 그냥 내 마음대로 지어주면 됨 -->
+	<servlet-class>com.test.lesson01.UrlMappingQuiz02</servlet-class>
+  </servlet>
+  
+
+  <servlet-mapping>
+  	<servlet-name>UrlMappingQuiz02</servlet-name>  <!-- 위에 서블릿 네임과 동일하게 입력해준다 -->
+  	<url-pattern>/servlet/quiz02</url-pattern> 
+  	<!-- / 앞에 꼭 붙어야함! 도메인 뒤에 붙는 주소 -->
+ 	<!-- 1. url패턴에 내가 임의로 입력한 주소로 들어가면 2. servlet-name과 동일한 이름을 서블릿에서 찾아서
+ 	3. 서블릿 클래스에 있는 걸 실행한다.  --> 
+ 	<!--  http://localhost/servlet/quiz01 이렇게 검색해야 함! -->
+  
+  </servlet-mapping>
+  
+</web-app>
